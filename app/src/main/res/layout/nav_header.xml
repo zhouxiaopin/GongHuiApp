@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:paddingTop="@dimen/status_bar_height"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <LinearLayout
+        android:id="@+id/llTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:padding="@dimen/dimen_10"
+        android:orientation="horizontal">
+        <cn.gzticc.gh.ui.custom.TiccTextView
+            android:id="@+id/tvSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="搜索"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:drawablePadding="@dimen/dimen_10"
+            android:drawableLeft="@mipmap/search"/>
+        <View
+            style="@style/shuLineTheme"/>
+        <cn.gzticc.gh.ui.custom.TiccTextView
+            android:id="@+id/tvWriteTopic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="写话题"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:drawablePadding="@dimen/dimen_10"
+            android:drawableLeft="@mipmap/write_topic"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llTab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llTopBar"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <cn.gzticc.customui.verticaltablayout.VerticalTabLayout
+            android:id="@+id/slideTabLayout"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:tabTextColor="@android:color/black"
+            app:tabSelectedTextColor="@color/blue"
+            app:tabBackground="@color/white"
+            app:tabTextAppearance="@android:style/TextAppearance.Large"
+            app:tab_margin="@dimen/dimen_20"
+            app:tabMode="fixed"
+            app:indicator_gravity="right"
+            app:indicator_color="@color/blue"
+            app:tabIndicatorColor="@color/blue"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/slideViewPage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+        <!--  <RadioGroup
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+              <RadioButton
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:textSize="@dimen/font_size_18"
+                  android:ems="1"
+                  android:maxEms="1"
+                  android:padding="@dimen/dimen_5"
+                  android:layout_margin="@dimen/dimen_10"
+                  android:textColor="@color/black"
+                  android:gravity="center_horizontal"
+                  android:button="@null"
+                  android:text="8小时外" />
+              <RadioButton
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:textSize="@dimen/font_size_18"
+                  android:ems="1"
+                  android:maxEms="1"
+                  android:padding="@dimen/dimen_5"
+                  android:layout_margin="@dimen/dimen_10"
+                  android:textColor="@color/black"
+                  android:gravity="center_horizontal"
+                  android:button="@null"
+                  android:text="8小时外" />
+              <RadioButton
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:textSize="@dimen/font_size_18"
+                  android:ems="1"
+                  android:maxEms="1"
+                  android:padding="@dimen/dimen_5"
+                  android:layout_margin="@dimen/dimen_10"
+                  android:textColor="@color/black"
+                  android:gravity="center_horizontal"
+                  android:button="@null"
+                  android:text="8小时外" />
+              <RadioButton
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:textSize="@dimen/font_size_18"
+                  android:ems="1"
+                  android:maxEms="1"
+                  android:padding="@dimen/dimen_5"
+                  android:layout_margin="@dimen/dimen_10"
+                  android:textColor="@color/black"
+                  android:gravity="center_horizontal"
+                  android:button="@null"
+                  android:text="8小时外" />
+
+          </RadioGroup>-->
+
+    </LinearLayout>
+    <!--<LinearLayout
+        android:id="@+id/llTabIndicator"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llTopBar"
+
+        android:orientation="vertical">
+        <View
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/gray"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/gray"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/blue"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/gray"/>
+
+
+    </LinearLayout>-->
+    <!--<android.support.v4.view.ViewPager
+        android:id="@+id/slideViewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llTopBar"
+        android:background="@color/white"
+        android:layout_toRightOf="@id/llTabIndicator" />-->
+
+</RelativeLayout>

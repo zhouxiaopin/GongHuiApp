@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--toolbar背景颜色-->
+    <color name="colorPrimary">#FFFFFF</color>
+    <!--状态栏颜色-->
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <!--按钮输入光标的颜色-->
+    <color name="colorAccent">#FF4081</color>
+
+    <!--透明-->
+    <color name="translate">#00000000</color>
+    <!--白色-->
+    <color name="white">#FFFFFF</color>
+    <!--黑色-->
+    <color name="black">#000000</color>
+    <!-- 蓝色-->
+    <color name="blue">#04A6EA</color>
+
+    <!--深灰色-->
+    <color name="deep_gray">#959595</color>
+    <!--灰色-->
+    <color name="gray">#ECECEC</color>
+
+
+</resources>
